@@ -26,6 +26,7 @@ const AllTransactions = () => {
             <h3>{transaction.type}</h3>
             <h3>{transaction.from}</h3>
             <h3>{transaction.amount}</h3>
+            <h2>{transaction.comment}</h2>
           </div>
         );
       })}
