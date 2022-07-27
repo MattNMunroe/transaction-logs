@@ -5,16 +5,16 @@ class NavBar extends React.Component {
     render(){
         return(
          <nav>
-            <label>BudgetTales!</label>
-            <h1>
+            <h1><Link classname="home" to="/">BudgetTales!</Link></h1>
+            <h3>
                 <Link className="transactions-list" to="/transactions">Transactions</Link>
-            </h1>
-            <h1>
+            </h3>
+            <h3>
                 <Link className="new-transaction-form" to="/transactions/new">New Entry</Link>
-            </h1>
-            <h1>
+            </h3>
+            <h3>
                 <Link className="home" to="/">Home</Link>
-            </h1>
+            </h3>
          </nav>
         )
     }

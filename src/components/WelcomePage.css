@@ -1,0 +1,15 @@
+section {
+    font-family: cursive;
+    font-size: large;
+    display: inline-block;
+    background-color:papayawhip;
+}
+
+h1 {
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: 500;
+    background-color:papayawhip;
+    border: 20px;
+    padding: 20px;
+}

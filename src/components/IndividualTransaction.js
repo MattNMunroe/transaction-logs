@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import "./IndividualTransaction.css"
 
 const IndividualTransaction = () => {
 
@@ -16,6 +17,7 @@ const IndividualTransaction = () => {
         return error
     })
 },[id])
+
 
 const { id : transactionId, type, date, from, amount, comment } = transaction
     return (

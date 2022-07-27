@@ -1,3 +1,5 @@
+import "./WelcomePage.css"
+
 const WelcomePage = () => {
     return(
         <div>
