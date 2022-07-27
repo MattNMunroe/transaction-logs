@@ -10,7 +10,7 @@ class NavBar extends React.Component {
                 <Link className="transactions-list" to="/transactions">Transactions</Link>
             </h1>
             <h1>
-                <Link className="new-transaction-form" to="/transactions">New Entry</Link>
+                <Link className="new-transaction-form" to="/transactions/new">New Entry</Link>
             </h1>
             <h1>
                 <Link className="home" to="/">Home</Link>

@@ -30,7 +30,7 @@ const TransactionForm = () => {
       })
       .then((data) => {
         console.log(data);
-        navigate("/");
+        navigate("/transactions");
       })
       .catch((e) => {
         console.log(e);
@@ -90,7 +90,7 @@ const TransactionForm = () => {
       <textarea
         type="text"
         name="comment-body"
-        placeholder="Leave a Memo..."
+        placeholder="Leave a Message..."
         onChange={(event) => {
           setComment(event.target.value);
         }}
