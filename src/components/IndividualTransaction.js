@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import "./IndividualTransaction.css"
+const API = process.env.REACT_APP_API
 
 const IndividualTransaction = () => {
 
@@ -8,7 +9,6 @@ const IndividualTransaction = () => {
     const [transaction, setTransaction] = useState({})
     
     useEffect(() => {
-    const API = process.env.REACT_APP_API
     const individualRoute = `${API}/transactions/${id}`
     fetch(individualRoute)
     .then((res) => res.json())
@@ -17,6 +17,8 @@ const IndividualTransaction = () => {
         return error
     })
 },[id])
+
+
 
 
 const { id : transactionId, type, date, from, amount, comment } = transaction

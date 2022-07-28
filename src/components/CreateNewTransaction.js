@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+const API = process.env.REACT_APP_API;
 
 const TransactionForm = () => {
   const [id, setId] = useState(0);
@@ -16,8 +17,7 @@ const TransactionForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-
-    const API = process.env.REACT_APP_API;
+    
     const newTransactionRoute = `${API}/transactions`;
 
     fetch(newTransactionRoute, {

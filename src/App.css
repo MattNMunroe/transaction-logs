@@ -16,7 +16,7 @@ nav {
 }
 
 nav :hover {
-  background-color: sandybrown;
+  background-color: rgb(227, 211, 197);
 }
 
 form {
@@ -25,17 +25,17 @@ form {
 }
 
 div {
-  background-image: url(https://wiki.mabinogiworld.com/images/1/18/Fiodh_Entrance.png);
+  background-image: url(https://img.freepik.com/premium-photo/afternoon-sunset-sky-clouds-anime-background_141465-19.jpg?w=2000);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-  background-position: center;
+  height: 600px;
+  background-position: cover;
 }
 
 label {
   font-size: x-large;
   font-weight: 700;
-  background-color: goldenrod;
+  background-color: black;
   margin: 5px;
   border: 5px;
 }
@@ -43,8 +43,4 @@ label {
 input {
   background-color: floralwhite;
   font-family: cursive;
-}
-
-button {
-
 }

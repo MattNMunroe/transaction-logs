@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
 import "./AllTransactions.css"
 
+const API = process.env.REACT_APP_API;
+
 const AllTransactions = () => {
   const [transactions, setTransactions] = useState([]);
-
+  
   useEffect(() => {
-    const API = process.env.REACT_APP_API;
     const allTransactionsRoute = `${API}/transactions`;
     fetch(allTransactionsRoute)
       .then((res) => res.json())
@@ -18,10 +19,8 @@ const AllTransactions = () => {
   }, []);
   console.log(transactions);
 
-const handleDelete = () => {
-  transactions.splice(1, 0)
-  return transactions
-}
+//use .filter to delete? Filter by most recententry or id number
+
 
   return (
     <div className="transaction-list">
@@ -34,7 +33,7 @@ const handleDelete = () => {
             <h3>{transaction.from}</h3>
             <h3>{transaction.amount}</h3>
             <h2>{transaction.comment}</h2>
-            <button onClick={handleDelete}>Delete Post</button>
+            <button>Delete Post</button>
           </div>
         );
       })}
